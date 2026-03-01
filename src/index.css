@@ -4,3 +4,16 @@
 @theme {
   --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
 }
+
+@layer base {
+  mjx-container[jax="SVG"] {
+    display: inline-block !important;
+    vertical-align: middle;
+    margin: 0 0.1em;
+  }
+  
+  mjx-container[jax="SVG"] > svg {
+    @apply inline-block;
+    overflow: visible;
+  }
+}

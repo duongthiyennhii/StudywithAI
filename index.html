@@ -4,6 +4,35 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>StudywithAI</title>
+    <script>
+      window.MathJax = {
+        tex: {
+          inlineMath: [['$', '$'], ['\\(', '\\)']],
+          displayMath: [['$$', '$$'], ['\\[', '\\]']],
+          processEscapes: true,
+          macros: {
+            vec: ["\\overrightarrow{#1}", 1]
+          }
+        },
+        options: {
+          ignoreHtmlClass: 'tex2jax_ignore',
+          processHtmlClass: 'tex2jax_process'
+        },
+        svg: {
+          fontCache: 'global'
+        }
+      };
+    </script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+    <style>
+      mjx-container[jax="SVG"] {
+        display: inline-block;
+        vertical-align: middle;
+        max-width: 100%;
+        overflow-x: auto;
+        overflow-y: hidden;
+      }
+    </style>
   </head>
   <body>
     <div id="root"></div>
